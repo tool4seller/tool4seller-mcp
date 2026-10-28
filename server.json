@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "description": "Amazon seller analytics for AI tools: profit, PPC advertising, inventory and store diagnostics.",
+  "name": "com.tool4seller/tool4seller-mcp",
+  "remotes": [
+    {
+      "headers": [
+        {
+          "description": "Optional alternative auth: MCP Key issued inside tool4seller (API & MCP & CLI -> MCP). Primary auth is OAuth sign-in with your tool4seller account (also via the ChatGPT plugin or Claude connector).",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "TS-MCP-KEY"
+        }
+      ],
+      "type": "streamable-http",
+      "url": "https://das-server.tool4seller.com/mcp"
+    }
+  ],
+  "title": "tool4seller MCP",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.tool4seller.com"
+}
